@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Top Artists</string>
+    <string name="pop_artists">Popular Artists</string>
+    <string name="data_error">Error while receiving data</string>
+</resources>
