@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         EventBus.getDefault().register(this);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         TextView titleTextView = toolbar.findViewById(R.id.toolbar_title);
         titleTextView.setText(R.string.pop_artists);
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
         realm = Realm.getDefaultInstance();
 
-        artistsRecyclerView = (RecyclerView) findViewById(R.id.artists_list);
+        artistsRecyclerView = findViewById(R.id.artists_list);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(artistsRecyclerView.getContext(),
                 manager.getOrientation());

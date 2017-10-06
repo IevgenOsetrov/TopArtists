@@ -60,7 +60,7 @@ public class AlbumsActivity extends AppCompatActivity {
 
         indicator = Utils.showToolbarInfo(this, artistName);
 
-        albumsRecyclerView = (RecyclerView) findViewById(R.id.albums_list);
+        albumsRecyclerView = findViewById(R.id.albums_list);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         albumsRecyclerView.setLayoutManager(mLayoutManager);

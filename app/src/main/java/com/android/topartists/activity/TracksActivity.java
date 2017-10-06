@@ -68,7 +68,7 @@ public class TracksActivity extends AppCompatActivity {
 
         indicator = Utils.showToolbarInfo(this, album);
 
-        tracksListView = (ListView) findViewById(R.id.tracks);
+        tracksListView = findViewById(R.id.tracks);
         LinearLayout header = new LinearLayout(this);
         header.setGravity(Gravity.CENTER_HORIZONTAL);
         poster = new ImageView(this);
